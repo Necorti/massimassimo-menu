@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Massi Massimo Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<h2>🍀 Massi Massimo Kitchen Panel</h2>
+
+<h3>Categories</h3>
+<input id="catName" placeholder="New category">
+<button id="addCat">Add</button>
+<div id="cats"></div>
+
+<hr>
+
+<h3>Product</h3>
+
+<input id="nameTR" placeholder="Name TR">
+<input id="nameEN" placeholder="Name EN">
+
+<input id="descTR" placeholder="Desc TR">
+<input id="descEN" placeholder="Desc EN">
+
+<input id="price" placeholder="Price">
+<input id="order" placeholder="Order">
+
+<select id="category"></select>
+
+<input type="file" id="photo">
+
+<label><input type="checkbox" id="showPhoto" checked> Show photo</label>
+<label><input type="checkbox" id="active" checked> Active</label>
+
+<input type="hidden" id="editId">
+
+<button id="save">Save Product</button>
+
+<h3>Products</h3>
+<div id="products"></div>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>
