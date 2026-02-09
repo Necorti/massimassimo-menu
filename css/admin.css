@@ -1,0 +1,10 @@
+body {
+  background:#111;
+  color:white;
+  padding:20px;
+}
+
+input, button {
+  margin:5px;
+  padding:8px;
+}
