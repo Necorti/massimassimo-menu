@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Massi Massimo Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/admin.css">
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script defer src="js/firebase.js"></script>
+  <script defer src="js/admin.js"></script>
+</head>
+
+<body>
+  <h1>Massi Massimo – Admin Panel</h1>
+
+  <h2>Kategori</h2>
+  <input id="catTR" placeholder="Kategori (TR)">
+  <input id="catEN" placeholder="Category (EN)">
+  <button id="addCat">Ekle</button>
+  <ul id="catList"></ul>
+
+  <h2>Ürün</h2>
+  <input id="pTR" placeholder="Ürün (TR)">
+  <input id="pEN" placeholder="Product (EN)">
+  <input id="dTR" placeholder="Açıklama (TR)">
+  <input id="dEN" placeholder="Description (EN)">
+  <input id="price" type="number" placeholder="Fiyat">
+  <select id="catSelect"></select>
+  <button id="addProd">Ürün Ekle</button>
+
+  <ul id="prodList"></ul>
+</body>
+</html>
