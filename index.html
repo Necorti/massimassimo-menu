@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Massi Massimo Menu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 
+  <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
+  <!-- JS -->
   <script defer src="js/firebase.js"></script>
   <script defer src="js/menu.js"></script>
 </head>
 
 <body>
+
+<header class="top-header">
   <h1>Massi Massimo</h1>
-  <p>Modern Irish Pub Menu</p>
+  <p class="subtitle">Modern Irish Pub Menu</p>
 
-  <div>
-    <button id="trBtn">TR</button>
-    <button id="enBtn">EN</button>
+  <div class="lang-switch">
+    <button id="langTR" class="active">TR</button>
+    <button id="langEN">EN</button>
   </div>
+</header>
 
-  <div id="menu"></div>
+<main id="menuContainer">
+  <!-- Categories & products will load here -->
+</main>
+
+<footer class="menu-footer">
+  <p>Fiyatlarımıza KDV dahildir.</p>
+  <p>18 yaş altına alkol satılmaz.</p>
+</footer>
+
 </body>
 </html>
+
